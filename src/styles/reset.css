@@ -1,0 +1,54 @@
+/* 1. Use a more-intuitive box-sizing model 
+요소의 크기를 계산할 때 padding과 border를 포함하도록 설정 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin 
+요소마다 margin이 다르기 때문*/
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height 
+  1.5는 너무 커서 1.15로 조정*/
+  line-height: 1.15;
+  /* 5. Improve text rendering 
+  webkit에만 적용 됨*/
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults 
+  1. display: block;를 추가하여 inline 요소의 기본 동작을 변경
+  2. max-width: 100%;를 추가하여 부모 요소의 너비를 초과하지 않도록 설정*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls 
+강제 상속 요소*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
