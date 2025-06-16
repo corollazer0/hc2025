@@ -30,10 +30,14 @@
 
 ---
 
-## Git
+## 개발 환경 설정
 ```
-#degit install
+#1. degit install
 npm install -g degit
-#git repo 중첩구조 설정 시 사용
+#2. git repo 중첩구조 설정 시 사용
 degit seulbinim/resources ./MULTI/assets
+#3. live server local 설치
+npm install live-server
 ```
+- emmet 초기 설정
+![emmet 초기 설정](image-1.png)
