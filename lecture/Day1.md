@@ -93,9 +93,17 @@ npm install live-server
   - vscode Configure Snippet
 - Figma Plugin을 이용해서 속성 추출하기
 - CDD를 하려면 rem단위 혹은 em단위로 사용하는게 좋음
+- darkmode
+  - lightdark() 사용
+  - @media 사용
 
+- 웹폰트 추천
+  - pretendard
+  - suit
 ---
 
 ## 기타
 - snippet 만드는 사이트
 https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode
+- caniuse : html css javascript가 지원되는지 확인하는지 확인 [caniuse](https://caniuse.com/)
+- [lightdark](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark) : 

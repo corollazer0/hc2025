@@ -8,6 +8,7 @@
 /* 2. Define the orange color */
 :root {
 /* Color styles */
+--color-scheme: light dark;
 --white: #FFFFFF;
 --black: #000000;
 --primary: #ED552F;
@@ -44,4 +45,12 @@
 --text: box-shadow(1px 1px 0px rgba(0, 0, 0, 1));
 --below-1: box-shadow(5px 5px 0px rgba(170, 170, 170, 1));
 --below-2: box-shadow(0px 15px 15px rgba(170, 170, 170, 1));
+}
+
+
+h1{
+    /* Semantic Variables 관리 
+    <h1 style:"--text-color: primary"> */
+    --text-color: var(--primary, #ED552F);
+    color: var(--primary);
 }

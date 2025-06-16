@@ -13,6 +13,8 @@
 - vscode 익스텐션
     - LiveServer
     - ColorHighlight
+    - HalCyon theme
+    - px to rem 
     - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
     - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
     - [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
