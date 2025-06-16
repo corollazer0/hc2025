@@ -26,3 +26,14 @@
 - 속성의 값은 ""가 기본 javascript는 ''
 - 동일 속성 중복 불가
 - Character Entity Code로 변환하여 마크업 해야함. ex) &
+
+
+---
+
+## Git
+```
+#degit install
+npm install -g degit
+#git repo 중첩구조 설정 시 사용
+degit seulbinim/resources ./MULTI/assets
+```
