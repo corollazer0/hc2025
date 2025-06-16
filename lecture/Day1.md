@@ -78,4 +78,24 @@ npm install live-server
   - border-box = border+padding
 - box-sizing : content-box or border-box
 - 요즘은 겨의 border-box를 씀 
-## 
+
+---
+
+## 작업 목록
+- 환경 구성
+- CSS 초기화
+- 사용자 정의 속성(CSS Custom Property)
+  - [MDN CSS 가장 좋은 레퍼런스](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties)
+  - :
+  - @property
+  - -- : 
+- lorem snippet 만들기
+  - vscode Configure Snippet
+- Figma Plugin을 이용해서 속성 추출하기
+- CDD를 하려면 rem단위 혹은 em단위로 사용하는게 좋음
+
+---
+
+## 기타
+- snippet 만드는 사이트
+https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode
