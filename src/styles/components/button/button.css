@@ -1,0 +1,17 @@
+.button {
+  --text-size: 0.8125rem;
+
+  background-color: var(--content);
+  color: var(--white);
+  border: 0;
+  border-radius: 4px;
+  /* 좌우 2px, 상하 4px */
+  padding: 4px 8px;
+  font-size: var(--text-size);
+  line-height: -0.02em;
+  /* class="button primary" */
+  &.primary {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+}
