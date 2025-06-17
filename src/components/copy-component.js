@@ -21,6 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.execCommand('copy');
         document.body.removeChild(textarea);
       }
+      // Visual feedback
+      const originalText = btn.textContent;
+      btn.textContent = '복사됨!';
+      btn.disabled = true;
+      setTimeout(function () {
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }, 300);
     });
   });
 });
