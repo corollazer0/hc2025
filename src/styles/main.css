@@ -46,4 +46,6 @@
 
 .footer {
   background-color: silver;
+  height: 10vh;
+  block-size: 10vh;
 }
