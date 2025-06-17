@@ -4,8 +4,8 @@
   --size: 940px;
 
   /* 최소 길이 설정*/
-  min-width: 960px;
-  min-inline-size: 960px;
+  min-width: calc(var(--size) + 20px);
+  min-inline-size: calc(var(--size) + 20px);
   /* Container 그리드 설정 프랙션,940,프랙션으로 칼럼 시작 위치가 정해짐*/
   display: grid;
   grid-template-columns: [full-start] 1fr [content-start] var(--size) [content-end] 1fr [full-end];
