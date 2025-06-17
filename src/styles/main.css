@@ -58,7 +58,7 @@
 }
 
 /* 각 요소의 세로크기를 %를 기준으로 할당 */
-.header {
+/* .header {
   background-color: yellowgreen;
   height: 10vh;
   block-size: 10vh;
@@ -95,4 +95,4 @@
   background-color: silver;
   height: 10vh;
   block-size: 10vh;
-}
+} */
