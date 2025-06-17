@@ -86,8 +86,8 @@ npm install live-server
 - CSS 초기화
 - 사용자 정의 속성(CSS Custom Property)
   - [MDN CSS 가장 좋은 레퍼런스](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties)
-  - :
-  - @property
+  - :root : 
+  - @property : 
   - -- : 
 - lorem snippet 만들기
   - vscode Configure Snippet
@@ -96,10 +96,15 @@ npm install live-server
 - darkmode
   - lightdark() 사용
   - @media 사용
-
 - 웹폰트 추천
   - pretendard
   - suit
+---
+
+
+
+
+
 ---
 
 ## 기타
