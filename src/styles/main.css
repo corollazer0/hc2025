@@ -3,17 +3,41 @@
   background-color: yellow;
   --size: 940px;
 
-  .header,
-  .visual,
-  .main,
-  .slogan,
-  .footer {
-    /* inline-size : width와 같음 logical Property */
-    width: var(--size);
-    inline-size: var(--size);
+  /* 최소 길이 설정*/
+  min-width: 960px;
+  min-inline-size: 960px;
+  /* Container 그리드 설정 프랙션,940,프랙션으로 칼럼 시작 위치가 정해짐*/
+  display: grid;
+  grid-template-columns: 1fr var(--size) 1fr;
+
+  /* 하위 직계 요소 그리드 설정 */
+  .header {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .visual {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .main {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .slogan {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .footer-container {
+    grid-row: 5;
+    grid-column: 1/4;
   }
 }
 
+/* 각 요소의 세로크기를 %를 기준으로 할당 */
 .header {
   background-color: yellowgreen;
   height: 10vh;
