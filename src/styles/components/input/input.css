@@ -1,0 +1,35 @@
+/* flex를 이용하여, direction 방향은 row, label은 shrink, input은 grow */
+/* flex : grow | shrink | basis */
+.input {
+  --text-size: 0.875rem;
+  --border-color: var(--gray-500);
+  display: flex;
+  flex-direction: row;
+
+  label {
+    font-size: var(--text-size);
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    /* 축소되지 않게 하는 속성 */
+    /* flex-shrink: 0; */
+    /* 한글은 min-content적용 시 한 줄로 줄어듬 */
+    flex: 0 0 auto;
+  }
+
+  input {
+    font-size: var(--text-size);
+    border: 1px solid var(--border-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    height: 24px;
+    /* 가변적으로 늘어날 수 있도록 */
+    /* flex-grow: 1; */
+    flex: 1 1 0;
+
+    &::placeholder {
+      color: var(--gray-700);
+    }
+
+    /* &::상태 로 스타일을 정의 */
+  }
+}
