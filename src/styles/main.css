@@ -1,4 +1,4 @@
-/* Container with Grid*/
+/* Container with Flex*/
 .container {
   background-color: yellow;
   --size: 940px;
@@ -6,69 +6,55 @@
   /* 최소 길이 설정*/
   min-width: calc(var(--size) + 20px);
   min-inline-size: calc(var(--size) + 20px);
-  /* Container 그리드 설정 프랙션,940,프랙션으로 칼럼 시작 위치가 정해짐*/
-  display: grid;
-  grid-template-columns: [full-start] 1fr [content-start] var(--size) [content-end] 1fr [full-end];
+  display: flex;
+  /* 횡방향 정렬을 위한 flex-direction 설정 */
+  /* flex는 row일 때 가로축이 main 세로축이 cross, column일 때 반대 */
+  flex-direction: column;
+  align-items: center;
 
   .header,
   .visual,
   .main,
-  .slogan {
-    grid-area: span 1 / content;
+  .slogan,
+  .footer {
+    /* width와 inline-size는 같은 설정 */
+    width: var(--size);
+    inline-size: var(--size);
   }
 
   .main {
-    display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: 250px 380px 190px;
-    gap: 44px;
+    display: flex;
+    flex-direction: row;
     padding: 28px 16px;
-    /* padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 28px;
-    padding-bottom: 28px; */
-  }
-
-  .footer-container {
-    grid-area: span 1 / full;
-    display: grid;
-    /* footer-container의 grid-template-columns를 상위 요소의 grid-template-columns를 상속받음 */
-    grid-template-columns: subgrid;
-    .footer {
-      grid-area: content;
+    /* space-between은 가장 끝 요소를 배치하고 나머지는 GAP으로 나누어 정의 */
+    /* space-between(사이에만 space 추가), space-around(좌우 끝에도 추가), space-evenly(균등) */
+    justify-content: space-between;
+    .group1 {
+      width: 250px;
+      inline-size: 250px;
+    }
+    .group2 {
+      width: 380px;
+      inline-size: 380px;
+    }
+    .group3 {
+      width: 190px;
+      inline-size: 190px;
     }
   }
 
-  /* 하위 직계 요소 그리드 설정 */
-  /* grid-area : row-start / col-start / row-end / col-end */
-  .header {
-    /* grid-column: 2;
-    grid-row: 1; */
-    /* grid-area: 1 / content; */
-  }
-
-  .visual {
-    /* grid-column: 2;
-    grid-row: 2; */
-    /* grid-area: 2 / content; */
-  }
-
-  .main {
-    /* grid-column: 2;
-    grid-row: 3; */
-    /* grid-area: 3 / content; */
-  }
-
-  .slogan {
-    /* grid-column: 2;
-    grid-row: 4; */
-    /* grid-area: 4 / content; */
-  }
-
   .footer-container {
-    /* grid-row: 5;
-    grid-column: 1/4; */
-    /* grid-area: 5 / full; */
+    width: 100%;
+    inline-size: 100%;
+    /* footer-container를 contents로 적용하면 box가 아닌것으로 적용하여 footer가 직계 자식이 됨 */
+    /* display: contents; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .footer {
+    }
   }
 }
 
