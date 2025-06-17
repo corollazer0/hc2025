@@ -8,32 +8,55 @@
   min-inline-size: 960px;
   /* Container 그리드 설정 프랙션,940,프랙션으로 칼럼 시작 위치가 정해짐*/
   display: grid;
-  grid-template-columns: 1fr var(--size) 1fr;
+  grid-template-columns: [full-start] 1fr [content-start] var(--size) [content-end] 1fr [full-end];
 
-  /* 하위 직계 요소 그리드 설정 */
-  .header {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .visual {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .main {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
+  .header,
+  .visual,
+  .main,
   .slogan {
-    grid-column: 2;
-    grid-row: 4;
+    grid-area: span 1 / content;
   }
 
   .footer-container {
-    grid-row: 5;
-    grid-column: 1/4;
+    grid-area: span 1 / full;
+    display: grid;
+    /* footer-container의 grid-template-columns를 상위 요소의 grid-template-columns를 상속받음 */
+    grid-template-columns: subgrid;
+    .footer {
+      grid-area: content;
+    }
+  }
+
+  /* 하위 직계 요소 그리드 설정 */
+  /* grid-area : row-start / col-start / row-end / col-end */
+  .header {
+    /* grid-column: 2;
+    grid-row: 1; */
+    /* grid-area: 1 / content; */
+  }
+
+  .visual {
+    /* grid-column: 2;
+    grid-row: 2; */
+    /* grid-area: 2 / content; */
+  }
+
+  .main {
+    /* grid-column: 2;
+    grid-row: 3; */
+    /* grid-area: 3 / content; */
+  }
+
+  .slogan {
+    /* grid-column: 2;
+    grid-row: 4; */
+    /* grid-area: 4 / content; */
+  }
+
+  .footer-container {
+    /* grid-row: 5;
+    grid-column: 1/4; */
+    /* grid-area: 5 / full; */
   }
 }
 
