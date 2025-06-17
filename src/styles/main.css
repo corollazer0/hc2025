@@ -1,4 +1,4 @@
-/* Container with Flex*/
+/* Container with Auto margin + float layout */
 .container {
   background-color: yellow;
   --size: 940px;
@@ -6,11 +6,6 @@
   /* 최소 길이 설정*/
   min-width: calc(var(--size) + 20px);
   min-inline-size: calc(var(--size) + 20px);
-  display: flex;
-  /* 횡방향 정렬을 위한 flex-direction 설정 */
-  /* flex는 row일 때 가로축이 main 세로축이 cross, column일 때 반대 */
-  flex-direction: column;
-  align-items: center;
 
   .header,
   .visual,
@@ -20,15 +15,26 @@
     /* width와 inline-size는 같은 설정 */
     width: var(--size);
     inline-size: var(--size);
+    margin-inline: auto;
   }
 
   .main {
-    display: flex;
-    flex-direction: row;
     padding: 28px 16px;
-    /* space-between은 가장 끝 요소를 배치하고 나머지는 GAP으로 나누어 정의 */
-    /* space-between(사이에만 space 추가), space-around(좌우 끝에도 추가), space-evenly(균등) */
-    justify-content: space-between;
+    display: flow-root;
+    min-height: 450px;
+    block-size: 450px;
+    /* float속성으로 정렬하기 위해 float tkdyd */
+    .group {
+      float: left;
+      height: 100%;
+      block-size: 100%;
+      /* margin-inline: 15px; */
+
+      &:nth-child(n + 2) {
+        margin-left: 44px;
+        margin-inline-start: 44px;
+      }
+    }
     .group1 {
       width: 250px;
       inline-size: 250px;
@@ -46,13 +52,6 @@
   .footer-container {
     width: 100%;
     inline-size: 100%;
-    /* footer-container를 contents로 적용하면 box가 아닌것으로 적용하여 footer가 직계 자식이 됨 */
-    /* display: contents; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
     .footer {
     }
   }
