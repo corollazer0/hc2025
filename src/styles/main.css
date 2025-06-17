@@ -1,0 +1,28 @@
+/* Container with Grid*/
+.container {
+  background-color: yellow;
+}
+
+.header {
+  background-color: yellowgreen;
+}
+
+.visual {
+  background-color: lime;
+}
+
+.main {
+  background-color: blue;
+}
+
+.slogan {
+  background-color: orange;
+}
+
+.footer-container {
+  background-color: lightgray;
+}
+
+.footer {
+  background-color: silver;
+}
