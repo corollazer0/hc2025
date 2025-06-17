@@ -1,26 +1,47 @@
 /* Container with Grid*/
 .container {
   background-color: yellow;
+  --size: 940px;
+
+  .header,
+  .visual,
+  .main,
+  .slogan,
+  .footer {
+    /* inline-size : width와 같음 logical Property */
+    width: var(--size);
+    inline-size: var(--size);
+  }
 }
 
 .header {
   background-color: yellowgreen;
+  height: 10vh;
+  block-size: 10vh;
 }
 
 .visual {
   background-color: lime;
+  height: 10vh;
+  block-size: 10vh;
 }
 
 .main {
   background-color: blue;
+  height: 10vh;
+  block-size: 60vh;
 }
 
 .slogan {
   background-color: orange;
+  height: 10vh;
+  block-size: 10vh;
 }
 
 .footer-container {
   background-color: lightgray;
+  height: 10vh;
+  block-size: 10vh;
 }
 
 .footer {
