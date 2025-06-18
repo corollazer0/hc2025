@@ -1,6 +1,6 @@
 /* Container with Auto margin + float layout */
 .container {
-  background-color: yellow;
+  /* background-color: yellow; */
   --size: 940px;
 
   /* 최소 길이 설정*/
@@ -57,42 +57,7 @@
   }
 }
 
-/* 각 요소의 세로크기를 %를 기준으로 할당 */
-/* .header {
-  background-color: yellowgreen;
-  height: 10vh;
-  block-size: 10vh;
+.login {
+  /* 로그인 컴포넌트 임시 */
+  background-color: red;
 }
-
-.visual {
-  background-color: lime;
-  height: 10vh;
-  block-size: 10vh;
-}
-
-.main {
-  background-color: blue;
-  height: 10vh;
-  block-size: 60vh;
-  .group {
-    background-color: lightblue;
-  }
-}
-
-.slogan {
-  background-color: orange;
-  height: 10vh;
-  block-size: 10vh;
-}
-
-.footer-container {
-  background-color: lightgray;
-  height: 10vh;
-  block-size: 10vh;
-}
-
-.footer {
-  background-color: silver;
-  height: 10vh;
-  block-size: 10vh;
-} */
