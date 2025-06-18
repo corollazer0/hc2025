@@ -21,6 +21,8 @@
   - htmltag wrap : div wrapper
   - prettier
   - advanced file : 파일 쉽게 생성할 때 사용
+  - cdnjs : cdn 적용을 위한 익스텐션
+  - fontawesome gallary : font awesome 사용을 위한 익스텐션 갤러리에서 쉽게 사용해야할 클래스를 알려줌
   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
   - [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
