@@ -1,0 +1,22 @@
+/* focus 시 링 스타일 적용 */
+:focus {
+  outline: 0;
+}
+/* 현업에서는 box shadow로 적용함. */
+:focus-visible {
+  --ring-color: var(--primary);
+  box-shadow: 0 0 2px 1px var(--ring-color);
+}
+
+/* 숨김 컨텐츠 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
