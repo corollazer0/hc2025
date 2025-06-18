@@ -11,11 +11,18 @@
   line-height: -0.02em;
   /* inline-flex 적용 */
   display: inline-flex;
+  /* center 정렬 */
+  align-items: center;
+  justify-content: center;
 
   /* class="button primary" */
   &.primary {
     background-color: var(--primary);
     color: var(--white);
+    &:focus-visible {
+      /* --ring-color: var(--primary); */
+      box-shadow: 0 0 2px 1px var(--ring-color);
+    }
   }
 }
 
@@ -24,6 +31,7 @@
   --end: var(--gray-700);
   --angle: 180deg;
   --size: 24px;
+  --icon-size: 12px;
   background-color: var(--end);
   background-image: linear-gradient(var(--angle), var(--start) 0%, var(--end) 100%);
 
@@ -46,8 +54,8 @@
 
     background-image: url(/src/assets/webcafe/validation_icon.png), linear-gradient(var(--angle), var(--start) 0%, var(--end) 100%);
     background-repeat: no-repeat, repeat;
-    background-position: 12px 50%, 0 0;
-    background-size: 12px 12px / 100%;
-    padding-left: 32px;
+    background-position: calc(var(--icon-size) / 2 + 4px) 50%, 0 0;
+    padding-left: calc(var(--icon-size) * 2);
+    background-size: var(--icon-size), 100%;
   }
 }
