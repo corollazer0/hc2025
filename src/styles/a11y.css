@@ -8,15 +8,16 @@
   box-shadow: 0 0 2px 1px var(--ring-color);
 }
 
-/* 숨김 컨텐츠 */
-.sr-only {
+/* 접근할 수 있으면서 읽을 수 있는 숨김 컨텐츠 스타일 from tailwind */
+.a11y-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+  clip: rect(0, 0, 0, 0);
+  /* clip-path: inset(50%); */
 }
