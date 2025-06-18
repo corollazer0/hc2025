@@ -9,9 +9,41 @@
   padding: 2px 4px;
   font-size: var(--text-size);
   line-height: -0.02em;
+  /* inline-flex 적용 */
+  display: inline-flex;
+
   /* class="button primary" */
   &.primary {
     background-color: var(--primary);
     color: var(--white);
+  }
+}
+
+.gradient {
+  --start: var(--gray-600);
+  --end: var(--gray-700);
+  --angle: 180deg;
+  --size: 24px;
+  background-color: var(--end);
+  background-image: linear-gradient(var(--angle), var(--start) 0%, var(--end) 100%);
+
+  /* color: var(--white); */
+
+  /* 앵커태그는 inline이라서 inline-block, block, flex, inline-flex로 해야함 */
+  display: inline-flex;
+  align-items: center;
+  padding: 0 calc(var(--size) / 2);
+  height: var(--size);
+  border-radius: calc(var(--size) / 2);
+
+  /* 배경이미지는 여러개를 겹칠 수 있으며 먼저 선언한게 가장 위에 올라옴 */
+  &.icon {
+    /* border: 1px solid red; */
+
+    background-image: url(/src/assets/webcafe/validation_icon.png), linear-gradient(var(--angle), var(--start) 0%, var(--end) 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: 12px 50%, 0 0;
+    background-size: 12px 12px / 100%;
+    padding-left: 32px;
   }
 }
