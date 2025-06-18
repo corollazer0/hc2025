@@ -22,7 +22,7 @@
     padding: 28px 16px;
     display: flow-root;
     min-height: 450px;
-    block-size: 450px;
+    min-block-size: 450px;
     /* float속성으로 정렬하기 위해 float tkdyd */
     .group {
       float: left;
