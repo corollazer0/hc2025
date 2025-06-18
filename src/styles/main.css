@@ -58,6 +58,88 @@
 }
 
 .login {
-  /* 로그인 컴포넌트 임시 */
-  background-color: red;
+  /* 로그인 컴포넌트 전체 */
+  --start: var(--primary);
+  --end: var(--secondary);
+  --shadow: var(--gray-500);
+  /* gradiant는 color위에 덮어 씌워짐 */
+  background-color: var(--end);
+  background-image: linear-gradient(90deg, var(--start) 0%, var(--end) 100%);
+  padding: 12px;
+  border-radius: 5px;
+  /* 오른쪽 아래로 5px씩 그림자, 번짐/확산 없음, 회색(#aaa) 그림자 */
+  box-shadow: 5px 5px 0px 0px var(--shadow);
+
+  ul {
+    /* 불렛, 패딩 삭제 */
+    /* list-style: none;
+    padding-left: 0; */
+    /* 한줄 배치위해 flex 적용 */
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+    }
+
+    span {
+      color: var(--primary);
+    }
+
+    a {
+      padding: 4px;
+    }
+  }
+
+  hr {
+    /* 상 10, 하 4 */
+    margin: 10px 0 4px;
+    border-bottom: 1px solid var(--gray-500);
+  }
+}
+h2 {
+  margin-bottom: 8px;
+}
+
+.login-wrapper {
+  /* 로그인 컴포넌트 내부 폼 영역 컴포넌트 */
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 8px 8px 4px 8px;
+}
+
+form {
+  /* background-color: yellow; */
+  /* 폼 영역 submit 버튼을 위한 자리 확보 */
+  padding-right: 58px;
+
+  .input:first-child {
+    /* 첫번째 input은 margin-top을 주어 위와 간격을 띄움 */
+    /* 여러 입력이 있는 경우 gap으로 설정하는게 좋음 */
+    margin-bottom: 4px;
+  }
+
+  /* 레이블 요소 설정 */
+  label {
+    /* background-color: pink; */
+    /* input.css에 display에 flex를 적용해서 길이 조정 가능 */
+    /* 4em=4글자 */
+    width: 4em;
+  }
+
+  /* submit 버튼을 위한 설정 */
+  position: relative;
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+  }
 }
