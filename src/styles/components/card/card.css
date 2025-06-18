@@ -35,7 +35,7 @@
   } */
 }
 .card-thumbnail img {
-  max-width: none; /* 크기 제한 해제 */
-  max-height: none; /* 크기 제한 해제 */
+  /* max-width: none; 
+  max-height: none; */
   /* display: block; */
 }
