@@ -1,8 +1,15 @@
 {
   "scripts": {
-    "start": "live-server --port=8080 --host=localhost"
+    "start": "live-server --port=8080 --host=localhost",
+    "webp": "simple-webp-converter"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "simple-webp-converter": "^1.0.3"
+  },
+  "simple-webp-converter": {
+    "src": "src/assets/webcafe/*.{png,jpg}"
   }
 }
