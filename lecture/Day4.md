@@ -49,6 +49,12 @@
 - tab: button
 - panel : div
 
+## CSS 애니메이션
+
+- 두 배경을 정의 하고 트랜지션되도록 처리
+- ::before, ::after와 같은 가상 선택자.
+- 가상 요소는 DOM에는 존재 하지 않음
+
 ```
 
 ```
@@ -61,3 +67,5 @@
 - [responsivelogos](https://www.responsivelogos.co.uk/)
 - [텍스트쉐도우 활용](https://codepen.io/tag/text-shadow)
 - [마스크 활용](https://bennettfeely.com/clippy/)
+- [Animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+- CSS tricks, frontendFocus, frontendArticle

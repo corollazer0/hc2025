@@ -1,0 +1,22 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 무브 애니메이션 */
+@keyframes move {
+  0% {
+    translate: 0 0;
+    font-size: 12px;
+    color: #0000;
+  }
+  100% {
+    translate: 400px 75px;
+    font-size: 24px;
+    color: #000f;
+  }
+}
