@@ -1,11 +1,11 @@
 /* 공통 스타일 */
 /* 그라디언트 + 보더 + 패딩 */
-
+/* 적용 시 class="gradient-styling" */
 .gradient-styling {
   --start: var(--gray-500);
   --end: var(--gray-200);
   --spacing: 16px;
-  --andgle: 180deg;
+  --angle: 180deg;
 
   border: 1px solid var(--gray-600);
   border-radius: 5px;
