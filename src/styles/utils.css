@@ -5,7 +5,7 @@
   --start: var(--gray-500);
   --end: var(--gray-200);
   --spacing: 16px;
-  --angle: 180deg;
+  --andgle: 180deg;
 
   border: 1px solid var(--gray-600);
   border-radius: 5px;
