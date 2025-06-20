@@ -387,6 +387,8 @@ body {
   background-color: yellow;
   /* news를 기준으로 좌측 고정 우측 fr */
   /* position: relative; */
+  /* 각 행의 갭이 다른 경우 가장 많이 사용 되는 gap을 설정 후 margin 추가 */
+  /*  */
   margin: 20px 0;
   display: grid;
   grid-template-areas:
